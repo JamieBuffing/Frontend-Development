@@ -2,7 +2,9 @@
 /* CSS REMEDY */
 /**************/
 *, *::after, *::before {
-  box-sizing:border-box;  
+	padding: 0px;
+	margin: 0px;
+  	box-sizing:border-box;  
 }
 
 
@@ -14,18 +16,94 @@
 /* CUSTOM PROPERTIES */
 /*********************/
 :root {
-	/* startje */
-	--color-text:#111;
-	--color-background:#eee;
+	--main-text: Maven Pro, sans-serif;
+	--white-text: #FFFFFF;
+	--dark-text: #000000;
+	--yellow-text: #d5ea42;
 }
 
+/**********************/
+/* CSS */
+/**********************/
+body {
+	font-family: var(--main-text);
+ }
+#Top {
+	width: 100vw;
+	background-color: black;
+}
+#Top a {
+	display: block;
+	font-family: var(--main-text);
+	color: var(--yellow-text);
+	text-align: center;
+	font-size: 0.75rem;
+	padding: 9px;
+	font-weight: 400;
+	text-decoration: none;
+}
+#Header {
+	width: 100vw;
+	padding: 10px 0 10px 0;
+}
+#Header ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	display: grid;
+	grid-template-columns: 10vw 10vw 48vw 10vw 10vw;
+	grid-template-rows: 1fr;
+	column-gap: 2%;
+	margin-left: 2%;
+}
+#Header li img {
+	height: 25px;
+	display: inline-block;
+	text-align: center;
+}
+#Header h1 {
+	text-align: center;
+	letter-spacing: 5px;
+	font-weight: 400;
+}
+#banner {
+	width: 100vw;
+}
+#banner img {
+	display: block;
+	width: 100%;
+	height: auto;
+	max-height: calc(100vh - 160px);
+}
+#categories {
 
+}
 
+#Winter {
 
+}
 
-/****************/
-/* JOUW STYLING */
-/****************/
+#Carry {
 
-/* jouw code */
+}
 
+#Timenow {
+
+}
+
+#Timeevolve {
+
+}
+
+#Date {
+
+}
+
+#About {
+
+}
+
+#Info {
+
+}
