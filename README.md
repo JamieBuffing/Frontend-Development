@@ -58,8 +58,14 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   ### Bevindingen
   Afbeeldingen alt tekst:
   - De afbeeldingen hebben geen duidelijke alt tekst
+  - De afbeeldingen schalen soms raar
 
-  
+  Tekst en kopjes in een screenreader:
+  - De kopjes beschijven niet altijd goed wat er komen gaat
+  - De tekst is soms niet genoeg om te weten watvoor product er te zien is
+
+  Er komt nog meer maar tijd enzo, wordt aan gewerkt
+
 
   ### Grid garden oefening
   <img src="readme-images/gridgarden.png" width="375px" alt="grid garden oefening">
