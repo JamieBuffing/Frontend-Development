@@ -56,7 +56,10 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken na test in 2<sup>e</sup> werkgroep</summary>
 
   ### Bevindingen
-  Lijst met je bevindingen die in de test naar voren kwamen:
+  Afbeeldingen alt tekst:
+  - De afbeeldingen hebben geen duidelijke alt tekst
+
+  
 
   ### Grid garden oefening
   <img src="readme-images/gridgarden.png" width="375px" alt="grid garden oefening">
