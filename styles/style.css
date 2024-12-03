@@ -32,6 +32,36 @@ body {
 header {
 	display: unset;
 }
+
+#noscroll {
+	height: 100vh;
+	overflow: hidden;
+}
+
+#hamenu {
+	position: absolute;
+	height: 100vh;
+	width: 100vw;
+	margin-left: 0px;
+	z-index: 20;
+}
+#dark {
+	position: absolute;
+	height: 100vh;
+	width: 100vw;
+	background-color: #000000;
+	opacity: 0.5;
+}
+#menu {
+	position: absolute;
+	content: "";
+	height: 100vh;
+	width: 80vw;
+	background-color: #FFFFFF;
+	overflow-y: scroll;
+	padding: 15px;
+}
+
 #Top {
 	width: 100vw;
 	background-color: black;
