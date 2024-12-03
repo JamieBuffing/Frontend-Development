@@ -17,7 +17,7 @@
 /*********************/
 :root {
 	--main-text: Maven Pro, sans-serif;
-	--heading-text: Montserrat,Georgia,sans-serif;
+	--heading-text: Montserrat, Georgia, sans-serif;
 	--white-text: #FFFFFF;
 	--dark-text: #000000;
 	--yellow-text: #d5ea42;
@@ -28,7 +28,10 @@
 /**********************/
 body {
 	font-family: var(--main-text);
- }
+}
+header {
+	display: unset;
+}
 #Top {
 	width: 100vw;
 	background-color: black;
@@ -43,14 +46,16 @@ body {
 	font-weight: 400;
 	text-decoration: none;
 }
-#Header {
+#header-navigation {
 	width: 100vw;
 	height: 56px;
 	padding-top: 15px;
 	position: sticky;
-	top: 0px;
+	top: -1px;
+	z-index: 10;
+	background-color: white;
 }
-#Header ul {
+#header-navigation ul {
 	list-style-type: none;
 	margin: 0;
 	padding: 0;
@@ -62,12 +67,12 @@ body {
 	margin-left: 2vw;
 	margin-right: 2vw;
 }
-#Header li {
+#header-navigation li {
 	display: grid;
 	align-self: center;
 	text-align: center;
 }
-#Header a {
+#header-navigation a {
 	color: var(--main-text);
 	text-decoration: none;
 }
@@ -84,9 +89,7 @@ body {
 	margin-left: 25px;
 	overflow-x: scroll;
 	text-transform: uppercase;
-	scrollbar-width: 0px;
-	-ms-overflow-style: none;  /* IE and Edge */
-  	scrollbar-width: none;
+	scrollbar-width: none;
 	font-size: 0.8em;
 }
 #categories::-webkit-scrollbar {
@@ -118,11 +121,11 @@ body {
 	margin: auto;
 	margin: 0 3vw 0 3vw;
 }
-#items {
+.items {
 	margin-top: 20px;
 	margin-left: 25px;
 }
-#items h2 {
+.items h2 {
 	font-family: var(--heading-text);
 	font-size: 1.5rem;
 	line-height: 1.2;
@@ -130,17 +133,17 @@ body {
 	font-weight: 500;
 	text-transform: uppercase;
 }
-#items ul {
+.items ul {
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
 	gap: 15px;
 	overflow-x: scroll;
 }
-#items li {
+.items li {
 	display: grid;
 	width: 65vw;
 }
-#items li a {
+.items li a {
 	width: 100%;
 	height: 100%;
 	display: grid;
@@ -152,16 +155,16 @@ body {
 	font-weight: 400;
 	font-size: 0.8em;
 }
-#link {
+.link {
 	display: block;
 	color: var(--dark-text);
 	text-align: center;
 	text-decoration: underline;
 }
-#out {
+.out {
 	opacity: 0.5;
 }
-#korting {
+.korting {
 	display: grid;
 	grid-area: 1 / 1 / 2 / 2;
 	margin: 2vw;
@@ -171,7 +174,7 @@ body {
 	align-self: center;
 	padding: 3px 10px 3px 10px;
 }
-#heart {
+.heart {
 	display: grid;
 	grid-row-start: 1;
 	grid-row-end: 2;
@@ -181,64 +184,66 @@ body {
 	margin-top: 5px;
 	z-index: 3;
 }
-#background {
+.background {
 	display: grid;
 	grid-area: 1 / 1 / 6 / 5;
 	height: 100%;
 	width: 100%;
 	object-fit: cover;
 }
-#beschrijving {
+.beschrijving {
 	display: grid;
 	grid-area: 6 / 1 / 7 / 5;
 	text-decoration: none;
 }
-#prijs_discount {
+.prijs_discount {
+	display: grid;
+	grid-area: 7 / 2 / 8 / 4;
+	text-decoration: none;
+	color: var(--dark-text);
+	overflow-x: visible;
+}
+.prijs_full {
 	display: grid;
 	grid-area: 7 / 1 / 8 / 2;
 	text-decoration: line-through;
 	color: #5c5c5c;
 }
-#prijs_full {
-	display: grid;
-	grid-area: 7 / 2 / 8 / 3;
-	text-decoration: none;
-	color: var(--dark-text);
-	overflow-x: visible;
-}
-#prijs_out {
+.prijs_out {
 	display: grid;
 	grid-area: 7 / 1 / 8 / 4;
 	text-decoration: underline;
 	color: var(--dark-text);
 	text-transform: uppercase;
 } 
-#card {
+.card {
 	display: block;
 	margin-top: 50px;
 }
-#card article {
+.card article {
 	display: block;
 	text-align: center;
 	background-color: #262728;
 	color: var(--white-text);
 }
-#card article h2 {
+.card article h2 {
 	font-weight: 400;
 	margin-top: 15px;
 	font-size: 1em;
 }
-#card article h3 {
+.card article h3 {
 	text-transform: uppercase;
 	font-size: 1.5em;
 	letter-spacing: 1px;
 	font-weight: 300;
 	margin-top: 10px;
 }
-#card article p {
+.card article p {
 	padding: 20px 10px 80px 10px;
+	font-size: 0.8em;
+	line-height: 2;
 }
-#card article a {
+.card article a {
 	position: absolute;
 	width: 60vw;
 	font-weight: 300;
@@ -252,27 +257,128 @@ body {
 	margin: 10px 20vw;
 	letter-spacing: 1px;
 }
-#card article img {
+.card article img {
 	width: 100%;
 	height: auto;
 	object-fit: contain;
+}	
+#timeevolve article {
+	background-color: #355c46;
 }
-#timenow {
-
-}
-
-#timeevolve {
-
-}
-
-#date {
-
-}
-
 #about {
-
+	margin-top: 50px;
+	width: 100vw;
+	height: 100vw;
+	background-image: url(/images/home/dream2.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	padding-left: 25px;
+	padding-top: 100px;
 }
-
+#about h2 {
+	text-transform: uppercase;
+	color: var(--white-text);
+	font-family: var(--heading-text);
+	font-weight: 500;
+	width: 60vw;
+}
+#about p {
+	padding-top: 20px;
+	padding-bottom: 20px;
+	color: var(--white-text);
+	font-family: var(--main-text);
+	font-size: 0.8em;
+}
+#about a {
+	text-decoration: none;
+	color: var(--white-text);
+	border-bottom-style: solid;
+	border-width: 1px;
+	font-size: 0.8em;
+}
 #info {
-
+	width: 100vw;
+	height: auto;
+	background-color: #f9f9f9;
+	text-align: center;
+	padding: 20px;
+	font-size: 1em;
+}
+#info p {
+	width: 55vw;
+	margin: auto;
+	color: #656565;
+	padding: 20px;
+}
+#footer {
+	margin-left: 25px;
+	margin-right: 25px;
+	width: auto;
+}
+#footer input {
+	width: auto;
+}
+#schrijfJeIn {
+	font-family: var(--heading-text);
+	font-weight: 500;
+	font-size: 1.6em;
+	text-align: center;
+	line-height: 1.2;
+	margin-top: 50px;
+}
+#footer input {
+	padding-left: 10px;
+	padding-top: 12px;
+	padding-bottom: 8px;
+	font-weight: 300;
+	width: 100%;
+	margin-top: 25px;
+}
+#footer input[type=submit] {
+	background-color: #000000;
+	color: var(--white-text);
+	text-transform: uppercase;
+	font-weight: 300;
+    font-family: var(--main-text);
+	font-size: 0.8em;
+    letter-spacing: 2px;
+	padding: 15px;
+}
+details summary {
+    list-style-type: none;
+}
+details summary::-webkit-details-marker {
+    display: none;
+}
+details summary::after {
+	display: inline-block;
+	content: url(/images/svgicons/arrow.svg);
+	transform: rotate(180deg);
+	transition: 0.5s;
+}
+details[open] > summary::after {
+    content: url(/images/svgicons/arrow.svg);
+	transform: rotate(0deg);
+	transition: 0.5s;
+}
+details summary h3 {
+	display: inline-block;
+}
+#endimg {
+	margin-top: 50px;
+	width: 50%;
+	margin-left: 25%;
+}
+#footer p {
+	text-align: center;
+	font-size: 0.8em;
+	margin-top: 20px;
+}
+#footer ul {
+	display: flex;
+	list-style: none;
+}
+#footer li img{
+	height: 25px;
+	width: auto;
 }
