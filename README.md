@@ -73,45 +73,45 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
     - Make sure that button, a and label element content is unique and descriptive
       - ~
     - Use left-aligned text for right-to-left (TRL) languages
-       
+      - ✅ 
     
   - Global code
     - Validate your HTML
-
+      - ❌
     - Use a lang attribute on the html element
-
+      - ✅ 
     - Provide a unique title for each page or view
-
+      - ✅ 
     - Ensure that viewport zoom is not disabled
-
+      - ✅ 
     - Use landmark elements to indicate important content regions
-
+      - ✅ 
     - Ensure a linear content flow
-
+      - ✅ 
     - Avoid using the autofocus attribute
 
     - Allow extending session timeouts
-
+      - ✅ 
     - Remove title attribute tooltips
 
     
   - Keyboard
     - Make sure there is a visible focus style for interactive elements that are navigated to via keyboard input
-
+      - Default
     - Check to see that keyboard focus order matches the visual layout
-
+      - ❌
     - Remove invisible focusable elements
-
+      - ❌
 
   - Images
     - Make sure that all img elements have an alt attribute
-
+      - ❌
     - Make sure that decorative images use null alt (empty) attribute values
-    
+      - ❌
     - Provide a text alternative for complex images such as charts, graphs, and maps
-
+      - ❌
     - For images containing text, make sure the alt description includes the image's text
-
+      - ❌
     - Use heading elements to introduce content
 
     - Use only one h1 element per page or view
@@ -131,9 +131,9 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
     - Ensure that links are recognizable as links
 
     - Ensure that controls have :focus states
-
+      - Default
     - Use the button element for buttons
-
+      - ❌
     - Provide a skip link and make sure that it is visible when focused
 
     - Identify links that open in a new tab or window
@@ -142,19 +142,19 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
   - Tables
     - Use the table element to describe tabular data
-
+      - NVT
     - Use the th element for table headers (with appropriate scope attributes)
-
+      - NVT
     - Use the caption element to provide a title for the table
-
+      - NVT
 
   - Forms
     - All inputs in a form are associated with a corresponding label element
-
+      - ❌
     - Use fieldset and legend elements where appropriate
 
     - Inputs use autocomplete where appropriate
-
+      - ❌
     - Make sure that form input errors are displayed in list above the form after submission
 
     - Associate input error messaging with the input it corresponds to
@@ -164,43 +164,43 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
   - Media
     - Make sure that media does not autoplay
-
+      - NVT
     - Ensure that media controls use appropriate markup
-
+      - NVT
     - Check to see that all media can be paused
-
+      - NVT
 
   - Videos
     - Confirm the presence of captions
-
+      - NVT
     - Remove seizure triggers
-
+      - NVT
 
   - Audio
     - Confirm that transcripts are available
-
+      - NVT
   
   - Appearance
     - Check your content in specialized browsing modes
-
+      - ❌
     - Increase text size to 200%
-
+      - ❌
     - Double-check that good proximity between content is maintained
-
+      - ❌
     - Make sure color isn't the only way information is conveyed
-
+      - ❌
     - Make sure instructions are not visual or audio-only
-
+      - ~
     - Use a simple, straightforward, and consistent layout
-
+      - ✅
   
   - Animation
     - Ensure animations are subtle and do not flash too much
-
+      - ✅
     - Provide a mechanism to pause background video
-
+      - NVT
     - Make sure all animation obeys the prefers-reduced-motion media query
-
+      - 
 
   
   - Color Contrast
@@ -226,14 +226,10 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
     - Ensure that button and link icons can be activated with ease
 
     - Ensure sufficient space between interactive items in order to provide a scroll area
+      
 
 
-
-
-  Er komt nog meer maar tijd enzo, wordt aan gewerkt
-
-
-  ### Grid garden oefening
+### Grid garden oefening
   <img src="readme-images/gridgarden.png" width="375px" alt="grid garden oefening">
 
 </details>
@@ -267,6 +263,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
   ### Agenda voor meeting
   samen met je groepje opstellen
+    **Dit is echt nooit gebeurd**
 
   | student 1      | student 2          | student 3    | student 4        |
   | ---            | ---                | ---          | ---              |
