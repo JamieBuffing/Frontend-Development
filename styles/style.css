@@ -42,26 +42,89 @@ header {
 	position: absolute;
 	height: 100vh;
 	width: 100vw;
-	margin-left: 0px;
+	margin-left: -110vw;
 	z-index: 20;
+	transition: 0.3s;
 }
 #dark {
 	position: absolute;
 	height: 100vh;
 	width: 100vw;
 	background-color: #000000;
-	opacity: 0.5;
+	opacity: 0;
+	transition-delay: 0.3s;
+	transition: 1.5s;
 }
 #menu {
+	font-family: var(--main-text);
 	position: absolute;
-	content: "";
 	height: 100vh;
 	width: 80vw;
 	background-color: #FFFFFF;
 	overflow-y: scroll;
 	padding: 15px;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+	line-height: 2;
 }
-
+#menu img:first-of-type{
+	display: grid;
+	position: absolute;
+	grid-area: 1 / 3 / 2 / 4;
+	margin-left: -20px;
+}
+#menu p{
+	text-align: center;
+}
+#menu img{
+	margin: auto;
+}
+#menu ul{
+	list-style: none;
+	grid-column: 1 / span 2;
+	font-size: 0.8em;
+	line-height: 3;
+	margin-top: 25px;
+}
+#menu ul a{
+	text-decoration: none;
+	color: var(--dark-text);
+}
+#menu ul:nth-of-type(1){
+	margin-top: 25px;
+	font-weight: 500;
+	border-top-style: solid;
+	border-width: 1px;
+	font-size: larger;
+	font-family: var(--heading-text);
+	letter-spacing: 1px;
+	text-transform: uppercase;
+	line-height: 2;
+}
+#menu ul:nth-of-type(1) li:first-child a {
+	color: #ba9e4c;
+}
+#menu li:nth-of-type(1) {
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	font-size: 1.1em;
+	font-weight: 500;
+}
+#menu article {
+	display: flex;
+	align-items: center;
+	margin-bottom: 50px;
+	margin-left: 25px;
+}
+#menu article select {
+	display: flex;
+	width: 60%;	
+}
+#menu article img {
+	height: 12px;
+	width: 16px;
+}
 #Top {
 	width: 100vw;
 	background-color: black;
@@ -84,6 +147,9 @@ header {
 	top: -1px;
 	z-index: 10;
 	background-color: white;
+}
+#header-navigation img {
+	width: 80%;
 }
 #header-navigation ul {
 	list-style-type: none;
@@ -356,6 +422,9 @@ header {
 	line-height: 1.2;
 	margin-top: 50px;
 }
+#footer form {
+	margin-top: 10px;
+}
 #footer input {
 	padding-left: 10px;
 	padding-top: 12px;
@@ -376,6 +445,11 @@ header {
 }
 details summary {
     list-style-type: none;
+	border-bottom-style: solid;
+	border-width: 1px;
+	border-color: #aca8a8;
+	padding-top: 15px;
+	padding-bottom: 15px;
 }
 details summary::-webkit-details-marker {
     display: none;
@@ -385,6 +459,8 @@ details summary::after {
 	content: url(/images/svgicons/arrow.svg);
 	transform: rotate(180deg);
 	transition: 0.5s;
+	position: absolute;
+	right: 30px;
 }
 details[open] > summary::after {
     content: url(/images/svgicons/arrow.svg);
@@ -393,6 +469,42 @@ details[open] > summary::after {
 }
 details summary h3 {
 	display: inline-block;
+	text-transform: uppercase;
+	letter-spacing: 1.83px;
+	font-family: var(--main-text);
+	font-weight: 500;
+	font-size: small;
+}
+details a {
+	display: block;
+}
+#volg a {
+	display: inline;
+}
+#volg img {
+	margin-top: 20px;
+	margin-right: 20px;
+	height: 40px;
+	width: 40px;
+	padding: 7px;
+	border-radius: 50%;
+	border-style: solid;
+	border-color: #000000;
+	border-width: 1px;
+}
+#bedrijven {
+	width: 90%;
+	margin: auto;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+#bedrijven li img {
+	height: 25px;
+	filter: grayscale(1);
+}
+#bedrijven li {
+	padding: 10px;
 }
 #endimg {
 	margin-top: 50px;
@@ -412,3 +524,12 @@ details summary h3 {
 	height: 25px;
 	width: auto;
 }
+.visually_hidden {
+	clip: rect(0 0 0 0);
+	clip-path: inset(50%);
+	height: 1px;
+	overflow: hidden;
+	position: absolute;
+	white-space: nowrap;
+	width: 1px;
+ }

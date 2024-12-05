@@ -39,11 +39,11 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   https://www.semlewis.com/nl/
 
   #### Screenshot(s) van de eerste pagina (small screen): 
-  hier de naam van de pagina  
+  Home pagina  
   <img src="readme-images/home.jpg" width="375px" alt="omschrijving van de pagina">
 
   #### Screenshot(s) van de tweede pagina (small screen):
-  hier de naam van de pagina  
+  Horloges pagina  
   <img src="readme-images/horloges.jpg" width="375px" alt="omschrijving van de pagina">
  
 </details>
@@ -63,6 +63,11 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   Tekst en kopjes in een screenreader:
   - De kopjes beschijven niet altijd goed wat er komen gaat
   - De tekst is soms niet genoeg om te weten watvoor product er te zien is
+  - Je kan met tab door de menu's heen maar dan scrolt de pagina niet goed mee
+  - het hamburgermenu opent niet om er doorheen te tabben
+
+  WCAG checklist:
+  - 
 
   Er komt nog meer maar tijd enzo, wordt aan gewerkt
 
@@ -83,10 +88,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <img src="readme-images/breakdown.jpg" width="375px" alt="breakdown van de hele pagina">
 
   ### dynamisch deel (bijv menu): 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="breakdown van een dynamisch deel">
-
-  ### wellicht nog een dynamisch deel (bijv filter): 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="breakdown van nog een dynamisch deel">
+  <img src="readme-images/breakdown menu.png" width="375px" alt="breakdown van een dynamisch deel">
 
 </details>
 
@@ -100,8 +102,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken voor 1<sup>e</sup> voortgang</summary>
 
   ### Stand van zaken
-  hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
-
+  In week 1 heb ben ik van boven naar beneden begonnen met het maken van de website, Als eerst heb ik de header gemaakt met navigatie. Daarna ben ik begonnen met het maken van de eerste banner en de categorieën.
 
   ### Agenda voor meeting
   samen met je groepje opstellen
