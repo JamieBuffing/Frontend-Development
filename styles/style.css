@@ -125,11 +125,14 @@ header {
 	height: 12px;
 	width: 16px;
 }
-#Top {
+#top {
 	width: 100vw;
 	background-color: black;
 }
-#Top a {
+#top a {
+	text-decoration: none;
+}
+#top a h3 {
 	display: block;
 	font-family: var(--main-text);
 	color: var(--yellow-text);
@@ -316,30 +319,30 @@ header {
 	display: block;
 	margin-top: 50px;
 }
-.card article {
+.card div {
 	display: block;
 	text-align: center;
 	background-color: #262728;
 	color: var(--white-text);
 }
-.card article h2 {
+.card div h2 {
 	font-weight: 400;
 	margin-top: 15px;
 	font-size: 1em;
 }
-.card article h3 {
+.card div h3 {
 	text-transform: uppercase;
 	font-size: 1.5em;
 	letter-spacing: 1px;
 	font-weight: 300;
 	margin-top: 10px;
 }
-.card article p {
+.card div p {
 	padding: 20px 10px 80px 10px;
 	font-size: 0.8em;
 	line-height: 2;
 }
-.card article a {
+.card div a {
 	position: absolute;
 	width: 60vw;
 	font-weight: 300;
@@ -353,7 +356,7 @@ header {
 	margin: 10px 20vw;
 	letter-spacing: 1px;
 }
-.card article img {
+.card div img {
 	width: 100%;
 	height: auto;
 	object-fit: contain;
@@ -477,6 +480,8 @@ details summary h3 {
 }
 details a {
 	display: block;
+	color: var(--dark-text);
+	text-decoration: underline;
 }
 #volg a {
 	display: inline;

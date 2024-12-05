@@ -23,8 +23,7 @@
 <body>
 
 
-	<section id="hamenu">
-		<h5 class="visually_hidden">Section van het hele hamburgermenu</h5>
+	<nav id="hamenu">
 		<div id="dark"></div>
 		<section id="menu">
 			<h5 class="visually_hidden">Section van het hamburgermenu met alle items</h5>
@@ -84,7 +83,7 @@
 				<li><a href="#">Privacybeleid</a></li>
 				<li><a href="#">Actievoorwaarden</a></li>
 			</ul>
-			<article>
+			<div>
 				<h5 class="visually_hidden">Een article in het hamburgermenu met de taal opties</h5>
 				<img alt="de vlag van het land" id="land" src="/images/svgicons/nederland.svg">
 				<select name="taal" id="taal" onchange="taalimg()">
@@ -92,8 +91,8 @@
 					<option value="uk.svg">ENG</option>
 					<option value="duitsland.svg">DE</option>
 				</select>
-			</article>
-			<article>
+			</div>
+			<div>
 				<h5 class="visually_hidden">Een article in het hamburgermenu met de valuta opties</h5>
 				<select name="valuta">
 					<option>€ EUR</option>
@@ -112,15 +111,14 @@
 					<option>S$ sd</option>
 					<option>kr sec</option>
 				</select>
-			</article>
+			</div>
 		</section>
-	</section>
+	</nav>
 
 
 	<header>
-		<section id="Top">
-			<h5 class="visually_hidden">Een section met het allerbovenste van de pagina</h5>
-			<a href="#">SALE - UP TO 50% OFF</a>
+		<section id="top">
+			<a href="#"><h3>SALE - UP TO 50% OFF</h3></a>
 		</section>
 		<section id="header-navigation">
 			<h5 class="visually_hidden">Een section met de navigatie van de pagina</h5>

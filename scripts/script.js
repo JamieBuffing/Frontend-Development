@@ -1,12 +1,12 @@
 function hamenuOpen() {
     document.documentElement.scrollTop = 0;
-    document.getElementById("hamenu").style.marginLeft = '0vw';
+    document.querySelector("nav").style.marginLeft = '0vw';
     document.getElementById("dark").style.opacity = '0.5';
     document.querySelector("body").setAttribute('id', 'noscroll');
 }
 
 function hamenuClose() {
-    document.getElementById("hamenu").style.marginLeft = '-110vw';
+    document.querySelector("nav").style.marginLeft = '-110vw';
     document.getElementById("dark").style.opacity = '0';
     document.querySelector("body").removeAttribute('id', 'noscroll');
 }
