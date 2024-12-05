@@ -200,33 +200,33 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
     - Provide a mechanism to pause background video
       - NVT
     - Make sure all animation obeys the prefers-reduced-motion media query
-      - 
+
 
   
   - Color Contrast
     - Check the contrast for all normal-sized text
-
+      - ✅
     - Check the contrast for all large-sized text
-
+      - ✅
     - Check the contrast for all icons
-
+      - ✅
     - Check the contrast of borders for input elements (text input, radio buttons, checkboxes, etc.)
-
+      - ~
     - Check text that overlaps images or video
-
+      - ~
     - Check custom ::selection colors
-
+      - ~
 
   
   - Mobile and touch
     - Check that the site can be rotated to any orientation
-
+      - ✅
     - Remove horizontal scrolling
-
+      - ✅
     - Ensure that button and link icons can be activated with ease
-
+      - ✅
     - Ensure sufficient space between interactive items in order to provide a scroll area
-      
+      - ✅
 
 
 ### Grid garden oefening
@@ -263,7 +263,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
   ### Agenda voor meeting
   samen met je groepje opstellen
-  
+
     **Dit is echt nooit gebeurd**
 
   | student 1      | student 2          | student 3    | student 4        |
