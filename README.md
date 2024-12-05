@@ -67,7 +67,8 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   - het hamburgermenu opent niet om er doorheen te tabben
 
   WCAG checklist:
-  - 
+  - Content
+    - Test
 
   Er komt nog meer maar tijd enzo, wordt aan gewerkt
 
