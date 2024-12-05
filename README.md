@@ -73,7 +73,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
     - Make sure that button, a and label element content is unique and descriptive
       - ~
     - Use left-aligned text for right-to-left (TRL) languages
-      - 
+       
     
   - Global code
     - Validate your HTML
