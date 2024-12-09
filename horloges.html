@@ -20,19 +20,18 @@
 	<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
 <body>
-	<section id="hamenu">
-		<h5 class="visually_hidden">Section van het hele hamburgermenu</h5>
+	<nav id="hamenu">
 		<div id="dark"></div>
 		<section id="menu">
 			<h5 class="visually_hidden">Section van het hamburgermenu met alle items</h5>
-			<img alt="Een kruisje om het menu te sluiten" onclick="hamenuClose()" src="/images/svgicons/close1.svg">
+			<button onclick="hamenuClose()"><img alt="Een kruisje om het menu te sluiten" src="/images/svgicons/close1.svg"></button>
 			<img alt="een afbeeldingen met een profiel icoon" src="/images/svgicons/profile.svg">
 			<img alt="een afbeelding met een support icoon" src="/images/svgicons/support.svg">
 			<p>Account</p>
 			<p>Support</p>
 			<ul>
 				<li><a href="#">Sale</a></li>
-				<li><a href="#">Horloges</a></li>
+				<li><a href="horloges.html">Horloges</a></li>
 				<li><a href="#">Sieraden</a></li>
 				<li><a href="#">Tassen</a></li>
 				<li><a href="#">Horlogebanden</a></li>
@@ -41,7 +40,7 @@
 			<ul>
 				<li>Categorieën</li>
 				<li><a href="#">Sale</a></li>
-				<li><a href="#">Horloges</a></li>
+				<li><a href="horloges.html">Horloges</a></li>
 				<li><a href="#">Chronograaf</a></li>
 				<li><a href="#">Horlogebanden</a></li>
 				<li><a href="#">Armbanden</a></li>
@@ -81,7 +80,7 @@
 				<li><a href="#">Privacybeleid</a></li>
 				<li><a href="#">Actievoorwaarden</a></li>
 			</ul>
-			<article>
+			<div>
 				<h5 class="visually_hidden">Een article in het hamburgermenu met de taal opties</h5>
 				<img alt="de vlag van het land" id="land" src="/images/svgicons/nederland.svg">
 				<select name="taal" id="taal" onchange="taalimg()">
@@ -89,8 +88,8 @@
 					<option value="uk.svg">ENG</option>
 					<option value="duitsland.svg">DE</option>
 				</select>
-			</article>
-			<article>
+			</div>
+			<div>
 				<h5 class="visually_hidden">Een article in het hamburgermenu met de valuta opties</h5>
 				<select name="valuta">
 					<option>€ EUR</option>
@@ -109,27 +108,135 @@
 					<option>S$ sd</option>
 					<option>kr sec</option>
 				</select>
-			</article>
+			</div>
 		</section>
-	</section>
+	</nav>
     <header>
-		<section id="Top">
-			<h5 class="visually_hidden">Een section met het allerbovenste van de pagina</h5>
-			<a href="#">SALE - UP TO 50% OFF</a>
+		<section id="top">
+			<a href="#"><h3>SALE - UP TO 50% OFF</h3></a>
 		</section>
 		<section id="header-navigation">
 			<h5 class="visually_hidden">Een section met de navigatie van de pagina</h5>
 			<ul>
-				<li onclick="hamenuOpen()"><img alt="menu icon" src="images/svgicons/menu.svg"></li>
+				<li><button onclick="hamenuOpen()"><img alt="menu icon" src="images/svgicons/menu.svg"></button></li>
 				<li><a href="#"><img alt="zoek icon" src="images/svgicons/search.svg"></a></li>
 				<li><a href="index.html"><img alt="het logo van Sem Lewis" src="images/svgicons/logo.svg"></a></li>
-				<li><a href="#"><img alt="hartje van favorieten" src="images/svgicons/heart_empty.svg"></a></li>
+				<li id="favo"><a href="#"><img alt="hartje van favorieten" src="images/svgicons/heart_empty.svg"></a></li>
 				<li><a href="#"><img alt="winkelwagen tasje" src="images/svgicons/bag.svg"></a></li>
 			</ul>
 		</section>
 	</header>
     <main>
-
+		<h1>Horloges</h1>
+		<section id="horloges">
+		<ul>
+			<li>
+				<a href="#">
+					<img alt="De aanbiedingen categorie" src="images/home/cat_sale.jpg">
+					<p>chronograaf horloges</p>
+				</a>
+			</li>
+			<li>
+				<a href="#">
+					<img alt="De aanbiedingen categorie" src="images/home/cat_sale.jpg">
+					<p>duikhorloges</p>
+				</a>
+			</li>
+			<li>
+				<a href="#">
+					<img alt="De aanbiedingen categorie" src="images/home/cat_sale.jpg">
+					<p>Skeleton horloges</p>
+				</a>
+			</li>
+		</ul>
+		</section>
+		<button> Filteren & Sorteren <img src="images/svgicons/settings.svg"></button>
+		<ul id="producten">
+			<li>
+				<button onclick="heart()"><img alt="Het hartje om aan favorieten toe te voegen" class="heart" src="images/svgicons/heart_empty.svg"></button>
+				<a href="#">
+				<img src="images/horloges/sem-lewis-soho-district-skeleton-chronograaf-horlo (3).jpg">
+				<p class="h_korting">-40%</p>
+				<p class="h_beschrijving">Aldgate East horloge zilver- en goudkleurig en groen</p>
+				<p class="h_prijs_out">voorraad  melding</p>
+				</a>
+			</li>
+			<li>
+				
+			</li>
+			<li>
+				
+			</li>
+			<li>
+				
+			</li>
+			<li>
+				
+			</li>
+			<li>
+				
+			</li>
+			<li>
+				
+			</li>
+			<li>
+				
+			</li>
+			<li>
+				
+			</li>
+			<li>
+				
+			</li>
+			<li>
+				
+			</li>
+			<li>
+				
+			</li>
+			<li>
+				
+			</li>
+			<li>
+				
+			</li>
+			<li>
+				
+			</li>
+			<li>
+				
+			</li>
+			<li>
+				
+			</li>
+			<li>
+				
+			</li>
+			<li>
+				
+			</li>
+			<li>
+				
+			</li>
+			<li>
+				
+			</li>
+			<li>
+				
+			</li>
+			<li>
+				
+			</li>
+			<li>
+				
+			</li>
+			<li>
+				
+			</li>
+			<li>
+				
+			</li>
+		</ul>
     </main>
 	<footer>
 		<section id="info">

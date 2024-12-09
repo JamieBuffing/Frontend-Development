@@ -1,11 +1,12 @@
 # Procesverslag
+<details>
 Markdown is een simpele manier om HTML te schrijven.  
 Markdown cheat cheet: [Hulp bij het schrijven van Markdown](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet).
 
 Nb. De standaardstructuur en de spartaanse opmaak van de README.md zijn helemaal prima. Het gaat om de inhoud van je procesverslag. Besteedt de tijd voor pracht en praal aan je website.
 
 Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard open zetten. Fijn om dat steeds voor de relevante stuk(ken) te doen.
-
+</details>
 
 
 
@@ -13,7 +14,6 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 ## Jij
 
 <details open>
-  <summary>uitwerken voor kick-off werkgroep</summary>
 
   ### Auteur:
   Jamie Buffing
@@ -31,8 +31,10 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
 
 ## Je website
-
-<details open>
+  Sem Lewis
+  
+  https://www.semlewis.com/nl/
+<details>
   <summary>uitwerken voor kick-off werkgroep</summary>
 
   ### Je opdracht:
@@ -89,11 +91,11 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
     - Ensure a linear content flow
       - ✅ 
     - Avoid using the autofocus attribute
-
+      - ~
     - Allow extending session timeouts
       - ✅ 
     - Remove title attribute tooltips
-
+      - ✅ 
     
   - Keyboard
     - Make sure there is a visible focus style for interactive elements that are navigated to via keyboard input
@@ -113,31 +115,31 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
     - For images containing text, make sure the alt description includes the image's text
       - ❌
     - Use heading elements to introduce content
-
+      - ✅ 
     - Use only one h1 element per page or view
-
+      - ✅ 
     - Heading elements should be written in a logical sequence
-
+      - ~
     - Don't skip heading levels
-
+      - ✅ 
 
   - Lists
     - Use list elements (ol, ul, and dl elements) for list content
-
+      - ✅ 
   
   - Controls
     - Use the a element for links
-
+      - ✅ 
     - Ensure that links are recognizable as links
-
+      - ~
     - Ensure that controls have :focus states
       - Default
     - Use the button element for buttons
       - ❌
     - Provide a skip link and make sure that it is visible when focused
-
+      - ✅ 
     - Identify links that open in a new tab or window
-
+      - ✅ 
 
 
   - Tables
@@ -152,15 +154,15 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
     - All inputs in a form are associated with a corresponding label element
       - ❌
     - Use fieldset and legend elements where appropriate
-
+      - ✅ 
     - Inputs use autocomplete where appropriate
       - ❌
     - Make sure that form input errors are displayed in list above the form after submission
-
+      - ✅ 
     - Associate input error messaging with the input it corresponds to
-
+      - ~
     - Make sure that error, warning, and success states are not visually communicated by just color
-
+      - ✅ 
 
   - Media
     - Make sure that media does not autoplay
@@ -200,7 +202,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
     - Provide a mechanism to pause background video
       - NVT
     - Make sure all animation obeys the prefers-reduced-motion media query
-
+      - ~
 
   
   - Color Contrast
@@ -255,22 +257,18 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
 ## Voortgang 1 (week 2)
 
-<details>
+<details open>
   <summary>uitwerken voor 1<sup>e</sup> voortgang</summary>
 
   ### Stand van zaken
   In week 1 heb ben ik van boven naar beneden begonnen met het maken van de website, Als eerst heb ik de header gemaakt met navigatie. Daarna ben ik begonnen met het maken van de eerste banner en de categorieën.
 
   ### Agenda voor meeting
-  samen met je groepje opstellen
+  Jamie
 
-    **Dit is echt nooit gebeurd**
-
-  | student 1      | student 2          | student 3    | student 4        |
-  | ---            | ---                | ---          | ---              |
-  | dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
-  | en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
-  | ...            | ...                | ...          | ...              |
+  1. 
+  2. 
+  3. 
 
 
   ### Verslag van meeting
@@ -344,13 +342,11 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
 
   ### Agenda voor meeting
-  samen met je groepje opstellen
+  Jamie
 
-  | student 1      | student 2          | student 3    | student 4        |
-  | ---            | ---                | ---          | ---              |
-  | dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
-  | en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
-  | ...            | ...                | ...          | ...              |
+  1. 
+  2. 
+  3. 
 
 
   ### Verslag van meeting
@@ -401,8 +397,10 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   Nb. ChatGpT en andere AI horen er ook bij.
   Nb. Vermeld de bronnen ook in je code.
 
-  1. bron 1
-  2. bron 2
-  3. ...
+  1. [a11lyproject](https://www.a11yproject.com/posts/how-to-hide-content/)
+    - visualy hidden
 
+
+
+  Er staat erg weinig dat klopt, de meeste trucs heb ik mezelf al aangeleerd het afgelopen jaar door ook als hobby wat websites en dingen te maken.
 </details>
