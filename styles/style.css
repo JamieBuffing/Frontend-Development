@@ -171,11 +171,12 @@ header {
 	align-self: center;
 	text-align: center;
 }
-#favo::after {
-	position: absolute;
-	justify-self: end;
-	bottom: 0px;
-	content: "0";
+#number{
+	display: grid;
+	grid-area: 2 / 4 / 2 / 5;
+	justify-content: end;
+	margin-top: -2vh;
+
 }
 #header-navigation a {
 	color: var(--main-text);
@@ -336,30 +337,30 @@ nav button {
 	display: block;
 	margin-top: 50px;
 }
-.card div {
+.card article {
 	display: block;
 	text-align: center;
 	background-color: #262728;
 	color: var(--white-text);
 }
-.card div h2 {
+.card article h2 {
 	font-weight: 400;
 	margin-top: 15px;
 	font-size: 1em;
 }
-.card div h3 {
+.card article h3 {
 	text-transform: uppercase;
 	font-size: 1.5em;
 	letter-spacing: 1px;
 	font-weight: 300;
 	margin-top: 10px;
 }
-.card div p {
+.card article p {
 	padding: 20px 10px 80px 10px;
 	font-size: 0.8em;
 	line-height: 2;
 }
-.card div a {
+.card article a {
 	position: absolute;
 	width: 60vw;
 	font-weight: 300;
@@ -373,7 +374,7 @@ nav button {
 	margin: 10px 20vw;
 	letter-spacing: 1px;
 }
-.card div img {
+.card article img {
 	width: 100%;
 	height: auto;
 	object-fit: contain;

@@ -19,18 +19,14 @@ function taalimg(){
 }
 
 function test() {
-    console.log(document.querySelector(".heart").src)
+    var element = document.getElementById('number');
+    var styles = window.getComputedStyle(element,':after')
+    var content = styles['content'];
+    console.log(content);
 }
 
 function heart() {
     favorieten ++;
     console.log(favorieten);
-    if(document.querySelector(".heart").src == "https://jamiebuffing.github.io/Frontend-Development/images/svgicons/heart_empty.svg"){
-        console.log("ja")
-    } else {
-        console.log("nee")
-    }
-
-
-
+    document.getElementById("number").innerText = favorieten;
 }
