@@ -263,21 +263,6 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   ### Stand van zaken
   In week 1 heb ben ik van boven naar beneden begonnen met het maken van de website, Als eerst heb ik de header gemaakt met navigatie. Daarna ben ik begonnen met het maken van de eerste banner en de categorieën.
 
-  ### Agenda voor meeting
-  Jamie
-
-  1. 
-  2. 
-  3. 
-
-
-  ### Verslag van meeting
-  hier na afloop snel de uitkomsten van de meeting vastleggen
-
-  - punt 1
-  - punt 2
-  - nog een punt
-  - ...
 
 </details>
 
@@ -291,27 +276,11 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken voor 2<sup>e</sup> voortgang</summary>
 
   ### Stand van zaken
-  hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
-
-
-  ### Agenda voor meeting
-  samen met je groepje opstellen
-
-  | student 1      | student 2          | student 3    | student 4        |
-  | ---            | ---                | ---          | ---              |
-  | dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
-  | en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
-  | ...            | ...                | ...          | ...              |
+  Bij dit voortgangsgesprek had ik alleen nog pagina 1 deels af en moest ik nog veel doen
 
 
   ### Verslag van meeting
-  hier na afloop snel de uitkomsten van de meeting vastleggen
-
-  - punt 1
-  - punt 2
-  - nog een punt
-- ...
-
+  In de meeting heb ik vragen gesteld over de code die ik had en is mij verteld dat ik moet gaan beginnen met de Readme
 </details>
 
 
@@ -324,8 +293,169 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken na test in 9<sup>e</sup> werkgroep</summary>
 
   ### Bevindingen
-  Lijst met je bevindingen die in de test naar voren kwamen (geef ook aan wat er verbeterd is):
+  De site is volledig toegankelijk met een screenreader. Op een paar plekken wordt informatie dubbel gegeven maar overal is de juiste informatie te horen.
 
+  WCAG checklist:
+  - Content
+    - Use plain language and avoid figures of speech, idioms and complicated metaphors.
+      - ✅  
+    - Make sure that button, a and label element content is unique and descriptive
+      - ~
+    - Use left-aligned text for right-to-left (TRL) languages
+      - ✅ 
+    
+  - Global code
+    - Validate your HTML
+      - ✅
+    - Use a lang attribute on the html element
+      - ✅ 
+    - Provide a unique title for each page or view
+      - ✅ 
+    - Ensure that viewport zoom is not disabled
+      - ✅ 
+    - Use landmark elements to indicate important content regions
+      - ✅ 
+    - Ensure a linear content flow
+      - ✅ 
+    - Avoid using the autofocus attribute
+      - ✅
+    - Allow extending session timeouts
+      - ✅ 
+    - Remove title attribute tooltips
+      - ✅ 
+    
+  - Keyboard
+    - Make sure there is a visible focus style for interactive elements that are navigated to via keyboard input
+      - Default
+    - Check to see that keyboard focus order matches the visual layout
+      - ~
+    - Remove invisible focusable elements
+      - ~
+
+  - Images
+    - Make sure that all img elements have an alt attribute
+      - ✅
+    - Make sure that decorative images use null alt (empty) attribute values
+      - ❌
+    - Provide a text alternative for complex images such as charts, graphs, and maps
+      - ✅
+    - For images containing text, make sure the alt description includes the image's text
+      - ✅
+    - Use heading elements to introduce content
+      - ✅ 
+    - Use only one h1 element per page or view
+      - ✅ 
+    - Heading elements should be written in a logical sequence
+      - ✅
+    - Don't skip heading levels
+      - ✅ 
+
+  - Lists
+    - Use list elements (ol, ul, and dl elements) for list content
+      - ✅ 
+  
+  - Controls
+    - Use the a element for links
+      - ✅ 
+    - Ensure that links are recognizable as links
+      - ✅
+    - Ensure that controls have :focus states
+      - Default/✅
+    - Use the button element for buttons
+      - ✅
+    - Provide a skip link and make sure that it is visible when focused
+      - ✅ 
+    - Identify links that open in a new tab or window
+      - ✅ 
+
+
+  - Tables
+    - Use the table element to describe tabular data
+      - NVT
+    - Use the th element for table headers (with appropriate scope attributes)
+      - NVT
+    - Use the caption element to provide a title for the table
+      - NVT
+
+  - Forms
+    - All inputs in a form are associated with a corresponding label element
+      - ✅
+    - Use fieldset and legend elements where appropriate
+      - ✅ 
+    - Inputs use autocomplete where appropriate
+      - ✅
+    - Make sure that form input errors are displayed in list above the form after submission
+      - ✅ 
+    - Associate input error messaging with the input it corresponds to
+      - ~
+    - Make sure that error, warning, and success states are not visually communicated by just color
+      - ✅ 
+
+  - Media
+    - Make sure that media does not autoplay
+      - ✅
+    - Ensure that media controls use appropriate markup
+      - ✅
+    - Check to see that all media can be paused
+      - ✅
+
+  - Videos
+    - Confirm the presence of captions
+      - NVT
+    - Remove seizure triggers
+      - NVT
+
+  - Audio
+    - Confirm that transcripts are available
+      - NVT
+  
+  - Appearance
+    - Check your content in specialized browsing modes
+      - ❌
+    - Increase text size to 200%
+      - ~
+    - Double-check that good proximity between content is maintained
+      - ❌
+    - Make sure color isn't the only way information is conveyed
+      - ✅
+    - Make sure instructions are not visual or audio-only
+      - ~
+    - Use a simple, straightforward, and consistent layout
+      - ✅
+  
+  - Animation
+    - Ensure animations are subtle and do not flash too much
+      - ✅
+    - Provide a mechanism to pause background video
+      - NVT
+    - Make sure all animation obeys the prefers-reduced-motion media query
+      - ✅
+
+  
+  - Color Contrast
+    - Check the contrast for all normal-sized text
+      - ✅
+    - Check the contrast for all large-sized text
+      - ✅
+    - Check the contrast for all icons
+      - ✅
+    - Check the contrast of borders for input elements (text input, radio buttons, checkboxes, etc.)
+      - ✅
+    - Check text that overlaps images or video
+      - ✅
+    - Check custom ::selection colors
+      - ✅
+
+  
+  - Mobile and touch
+    - Check that the site can be rotated to any orientation
+      - ✅
+    - Remove horizontal scrolling
+      - ✅
+    - Ensure that button and link icons can be activated with ease
+      - ✅
+    - Ensure sufficient space between interactive items in order to provide a scroll area
+      - ✅
 </details>
 
 
@@ -338,13 +468,13 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken voor 3<sup>e</sup> voortgang</summary>
 
   ### Stand van zaken
-  hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
+  Hier had ik pagina 1 bijna helemaal af en moest ik alleen nog mijn footer afmaken en mijn hamburgermenu
 
 
   ### Agenda voor meeting
   Jamie
 
-  1. 
+  1. Welke form van de footer ik moest aanhouden, die van de breakdown of de huidige
   2. 
   3. 
 
@@ -352,10 +482,9 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   ### Verslag van meeting
   hier na afloop snel de uitkomsten van de meeting vastleggen
 
-  - punt 1
-  - punt 2
-  - nog een punt
-  - ...
+  - Maakte niet uit dus ik ben die van de breakdown gaan maken
+  - -
+  - -
 
 </details>
 
@@ -369,19 +498,19 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken voor eindgesprek</summary>
 
   ### Je uitkomst - karakteristiek screenshots:
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="uitomst opdracht 1">
+  <img src="readme-images/final.png" width="375px" alt="uitomst opdracht 1">
 
 
   ### Dit ging goed/Heb ik geleerd: 
-  Korte omschrijving met plaatjes
+  Hoe ik het beste een site kan namaken en waar ik dan aan moet denken, ik ben er achter gekomen dat het best veel werk is en je van tevoren goed moet kijken naar de hierarchie van de site. Hierbij kan je ook al meteen opletten waar ze welke kopjes gebruiken en wat in het origineel dus verschillende delen zijn.
 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="top">
+  <img src="readme-images/afbeelding1.png" width="375px" alt="top">
 
 
   ### Dit was lastig/Is niet gelukt:
-  Korte omschrijving met plaatjes
+  Het is door de tijd niet gelukt om ook te zorgen dat er nog een paar kleine dingen op de pagina werken zoals de hartjes die veranderen van kleur of die er ook weer af kunnen gaan.
 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="bummer">
+  <img src="readme-images/afbeelding2.png" width="375px" alt="bummer">
 </details>
 
 

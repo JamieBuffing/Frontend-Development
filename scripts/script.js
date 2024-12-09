@@ -13,18 +13,22 @@ function hamenuClose() {
     document.querySelector("body").removeAttribute('id', 'noscroll');
 }
 
+function filmenuOpen() {
+    document.documentElement.scrollTop = 0;
+    document.getElementById("filmenu").style.marginLeft = '0vw';
+    document.getElementById("dark2").style.opacity = '0.5';
+    document.querySelector("body").setAttribute('id', 'noscroll');
+}
+
+function filmenuClose() {
+    document.getElementById("filmenu").style.marginLeft = '110vw';
+    document.getElementById("dark2").style.opacity = '0';
+    document.querySelector("body").removeAttribute('id', 'noscroll');
+}
 function taalimg(){
     let taal = document.getElementById("taal");
     document.getElementById("land").src = "/images/svgicons/" + taal.value;
 }
-
-function test() {
-    var element = document.getElementById('number');
-    var styles = window.getComputedStyle(element,':after')
-    var content = styles['content'];
-    console.log(content);
-}
-
 function heart() {
     favorieten ++;
     console.log(favorieten);

@@ -80,6 +80,9 @@ header {
 #menu img{
 	margin: auto;
 }
+#land {
+	width: 16px;
+}
 #menu ul{
 	list-style: none;
 	grid-column: 1 / span 2;
@@ -560,7 +563,13 @@ details a {
 /*********************/
 /* 	 tweede pagina 	 */
 /*********************/
-
+h1 {
+	text-transform: uppercase;
+	font-weight: 500;
+	line-height: 1.2;
+	font-family: var(--heading-text);
+	padding: 30px;
+}
 #horloges {
 	margin-top: 50px;
 	margin-left: 15px;
@@ -602,6 +611,8 @@ details a {
 	display: grid;
 	grid-template-columns: 1fr 1fr;
 	grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+	column-gap: 15px;
+	row-gap: 25px;
 }
 #producten li {
 	display: grid;
@@ -661,3 +672,143 @@ details a {
 	color: var(--dark-text);
 	align-items: center;
 }
+#filmenu {
+	position: absolute;
+	margin-left: 110vw;
+	width: 100vw;
+	height: 100vh;
+	background: none;
+	z-index: 3;
+	transition: 0.3s;
+}
+#dark2 {
+	content: "";
+	position: absolute;
+	height: 100vh;
+	width: 100vw;
+	background-color: #000000;
+	opacity: 0;
+	transition-delay: 0.3s;
+	transition: 1.5s;
+}
+#filters {
+	display: block;
+	width: 90vw;
+	padding: 10px;
+	margin: auto;
+	background-color: white;
+	font-weight: 400;
+	line-height: 1.6;
+	font-size: 0.8em;
+	border-width: 1px;
+	margin-bottom: 15px;
+}
+#filtersmenu {
+	font-family: var(--main-text);
+	position: absolute;
+	height: 100vh;
+	overflow-y: scroll;
+	width: 80vw;
+	top: 0px;
+	right: 0px;
+	background-color: #FFFFFF;
+	overflow-y: scroll;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: 70px 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+	line-height: 2;
+	z-index: 11;
+}
+#filtersmenu button:first-of-type {
+	display: grid;
+	width: 10vw;
+	height: 10vw;
+	border-radius: 5vw;
+	align-items: center;
+	align-self: center;
+	justify-content: center;
+	position: absolute;
+	grid-area: 1 / 2 / 2 / 3;
+	right: 10px;
+	top: 10px;
+	border: none;
+	background: none;
+}
+#line1 {
+	content: "";
+	display: grid;
+	grid-area: 1 / 1 / 2 / 3;
+	border-bottom-style: solid;
+	border-width: 2px;
+	width: 80vw;
+}
+#filtersmenu details {
+	display: grid;
+	grid-column-start: 1;
+	grid-column-end: 3;
+	font-weight: 400;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+	line-height: 21px;
+}
+#filtersmenu summary { 
+	padding-left: 15px;
+	text-transform: none;
+}
+#filtersmenu input {
+	margin-left: 15px;
+	text-transform: none;
+}
+#filtersmenu label {
+	padding-left: 10px;
+	text-transform: none;
+	line-height: 2;
+}
+#toepas  {
+	display: grid;
+	grid-area: 11 / 1 / 13 / 3;
+	width: 100%;
+	box-shadow: 0px -3px 7px lightgray;
+}
+#toepas p {
+	width: 80%;
+	margin: auto;
+	padding: 10px 25px;
+	border-style: solid;
+	text-align: center;
+}
+#toepas p:first-of-type{
+	color: var(--white-text);
+	background-color: #000000;
+}
+#dank {
+	padding: 15px;
+	font-size: 0.8em;
+	line-height: 1.6;
+	font-weight: 400;
+}
+
+
+
+
+
+@media (prefers-reduced-motion) {
+	#hamenu {
+		transition: 0s;
+	}
+	#dark {
+		transition: 0s;
+	}
+	#filmenu {
+		transition: 0s;
+	}
+	#dark2 {
+		transition: 0s;
+	}
+	details[open] > summary::after {
+		transition: 0s;
+	}
+	details summary::after {
+		transition: 0s;
+	}
+  }
