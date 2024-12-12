@@ -407,7 +407,7 @@ nav button {
 	margin-top: 50px;
 	width: 100vw;
 	height: 100vw;
-	background-image: url(/images/home/dream2.jpg);
+	background-image: url(./images/home/dream2.jpg);
 	background-repeat: no-repeat;
 	background-size: cover;
 	padding-left: 25px;
@@ -500,14 +500,14 @@ details summary::-webkit-details-marker {
 }
 details summary::after {
 	display: inline-block;
-	content: url(/images/svgicons/arrow.svg);
+	content: url(./images/svgicons/arrow.svg);
 	transform: rotate(180deg);
 	transition: 0.5s;
 	position: absolute;
 	right: 30px;
 }
 details[open] > summary::after {
-    content: url(/images/svgicons/arrow.svg);
+    content: url(./images/svgicons/arrow.svg);
 	transform: rotate(0deg);
 	transition: 0.5s;
 }
