@@ -25,11 +25,12 @@
 		<div id="dark"></div>
 		<section id="menu">
 			<h4 class="visually_hidden">Section van het hamburgermenu met alle items</h4>
-			<img alt="Een kruisje om het menu te sluiten" onclick="hamenuClose()" src="/images/svgicons/close1.svg">
+			<button onclick="hamenuClose()"><img alt="Een kruisje om het menu te sluiten" src="/images/svgicons/close1.svg"></button>
 			<img alt="een afbeeldingen met een profiel icoon" src="/images/svgicons/profile.svg">
 			<img alt="een afbeelding met een support icoon" src="/images/svgicons/support.svg">
 			<p>Account</p>
 			<p>Support</p>
+			<button class="mode" onclick="theme()"><img id="modeimg" src="images/svgicons/switch.svg"></button>
 			<ul>
 				<li><a href="#">Sale</a></li>
 				<li><a href="horloges.html">Horloges</a></li>
@@ -110,6 +111,7 @@
 					<option>kr sec</option>
 				</select>
 			</div>
+
 		</section>
 	</nav>
 
